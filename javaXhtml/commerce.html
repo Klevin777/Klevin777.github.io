@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  
+  <!--Code pour le tableau, le changement de l'arrière plan et le texte--> 
+  <style>
+            
+        
+            
+    table{margin-right: auto;
+      margin-left: auto;
+      float: center;
+      height: 80px;
+      border: 3px solid black;
+      border-collapse: collapse}
+      
+            
+    td,th{border: 3px solid black;
+      border-collapse: collapse;}
+    h1 {text-align:center}
+      #description{text-align:center}
+            
+  </style>
+  
+</head>
+
+<body>
+
+  <h1>Soulieurs Suprêmes!</h1><br><br>
+  <div id = "description">Bievenue au magasin souliers suprêmes! Ici nous offrons les meilleurs souliers avec des prix très bas!</div>
+  <script src="commerce.js"></script>
+  
+  <!--Code pour l'image des souliers et leurs descriptions-->
+  
+  <img src = "jordan.jpg" width = 200 height = 200>Air jordan 1 150$
+  
+  <!--Drop down select de 1 à 5 pour la quantité de jordan que l'utilisateur peut acheter-->
+  
+  <label for="selquantite" >  Quantité:</label>
+  <select id="selquantite" name = "quantite">
+     <option value=0>0</option>
+    <option value=1>1</option>
+    <option value=2>2</option>
+    <option value=3>3</option>
+    <option value=4>4</option>
+    <option value=5>5</option>
+
+  <!-- Checkbox pour ajouter les jordans au panier-->
+  
+  </select> <label for="chksoulieurs"><input type="checkbox"       id="chksouliers" name="souliers" value="jordan">Ajouter au panier
+
+  <!--image de skechers --> 
+  
+<img src = "skechers.jpg" width = 200 height = 200>Skechers 50$
+  
+  <!--Drop down select de 1 à 5 pour la quantité de skechers que l'utilisateur peut acheter-->
+  
+  <label for="selquantite2">  Quantité:</label>
+  <select id="selquantite2" name = "quantite"> 
+    <option value=0>0</option>
+    <option value=1>1</option>
+    <option value=2>2</option>
+    <option value=3>3</option>
+    <option value=4>4</option>
+    <option value=5>5</option>
+
+  <!-- Checkbox pour ajouter les jordans au panier-->
+  
+</select><label for="chksoulieurs2"><input type="checkbox" id="chksouliers2" name="souliers" value="skechers">Ajouter au panier
+  
+  <div><img src = "retro4.jpg" width = 200 height = 200>Jordan retro 4 165$
+    
+    <!--Drop down select de 1 à 5 pour la quantité de jordan retro 4 que l'utilisateur peut acheter-->
+    
+  <label for="selquantite">  Quantité:</label>
+  <select id="selquantite3" name = "quantite">
+    <option value=0>0</option>
+    <option value=1>1</option>
+    <option value=2>2</option>
+    <option value=3>3</option>
+    <option value=4>4</option>
+      <option value=5>5</option>
+  
+   <!-- Checkbox pour ajouter les jordan retro 4 au panier-->
+  
+</select><label for="chksoulieurs3"><input type="checkbox" id="chksouliers3" name="souliers" value="retro4">Ajouter au panier
+  
+  <img src = "ultraboost.jpg" width = 200 height = 200>Adidas ultraboost 160$
+
+   <!--Drop down select de 1 à 5 pour la quantité de adidas ultraboost que l'utilisateur peut acheter-->
+  
+  <label for="selquantite">  Quantité:</label>
+  <select id="selquantite4" name = "quantite">
+    <option value=0>0</option>
+    <option value=1>1</option>
+    <option value=2>2</option>
+    <option value=3>3</option>
+    <option value=4>4</option>
+    <option value=5>5</option>
+
+  <!-- Checkbox pour ajouter les ultraboost au panier-->
+  
+  </select><label for="chksoulieurs4"><input type="checkbox"       id="chksouliers4" name="souliers" value="ultraboost">Ajouter au panier
+</div>  
+
+  <img src = "airforce.jpg" width = 200 height = 200>Air force 1  120$
+  
+  <!--Drop down select de 1 à 5 pour la quantité de air force 1 que l'utilisateur peut acheter-->
+  
+  <label for="selquantite">  Quantité:</label>
+  <select id="selquantite5" name= "quantite">
+    <option value=0>0</option>
+    <option value=1>1</option>
+    <option value=2>2</option>
+    <option value=3>3</option>
+    <option value=4>4</option>
+    <option value=5>5</option>
+
+   <!-- Checkbox pour ajouter les air force 1 au panier-->
+  
+</select><label for="chksoulieurs5"><input type="checkbox" id="chksouliers5" name="souliers" value="airforce">Ajouter au panier
+
+
+<!-- radio button pour permettre à l'utilisateur de donner leur sexe -->
+  
+ <div><label for="radGrade">sexe:</label>
+ <input type="radio" name="sexe" id="radGrade" value="Homme">Homme
+<input type="radio" name="sexe" id="radGrade" value="Femme">Femme </div>
+
+  <!-- Dropdown select pour que l'utilisateur choisi la taille de souliers qu'ils aimeraient de 7 à 14 -->
+  
+ <div> <label for="seltaille">  Taille:</label>
+  <select id="seltaille">
+    <option value= 7>7</option>
+    <option value= 8>8</option>
+    <option value= 9>9</option>
+    <option value= 10>10</option>
+    <option value= 11>11</option>
+    <option value= 12>12</option>
+    <option value= 13>13</option>
+    <option value= 14>14</option>
+</select></div>
+
+  <!-- radio button pour le choix de province ainsi que le mode de livraison -->
+  
+<label for="radGrade">Votre province:</label>
+ <input type="radio" name="province" id="radGrade" value="Ontario">Ontario
+<input type="radio" name="province" id="radGrade" value="Quebec">Québec
+<div id = "erreurprovince"></div>
+ <div> <label for="radGrade">Votre mode de livraison:</label>
+ <input type="radio" name="livraison" id="radGrade" value="normale">Normale(15$)
+<input type="radio" name="livraison" id="radGrade" value="rapide">Rapide(40$)
+</div>
+
+   <!--affiche une erreur si aucun mode de livraison est sélectionnée -->
+  
+<div id = "erreurlivraison"></div>
+
+   <!--Permettre à l'utilisateur d'entrer leur montant d'argent -->
+
+  <label for="txtNom">Entrez votre argent:</label> 
+  <input type="text" id="txtargent">
+
+<!--Boutton pour afficher le total, le reçu et la monnaie à rendre -->
+  
+<input type="button" id="btnSoumet" onclick="calculprix()" value="Afficher votre total et voir votre monnaie à rendre"><br></br>
+
+  <div id = "prixtotal"></div>
+
+
+
+<!--Affiche le reçu -->
+
+          
+  <div id = "etoiles"></div>
+  <div>Votre reçu</div>
+  <div id = "quantiterecu"></div>
+  <div id = "soustotal"></div>
+  <div id = "taxes"></div>
+  <div id = "recutotal"></div>
+  <div id = "livraison"></div>
+  <div id = "prixfinal"></div>
+
+  
+  
+ 
+  
+   
+
+  
+  
+  
+
+<!--Tableau pour la monnaie à rendre au client -->
+  
+  <h1> Monnaie à remmettre </h1>
+
+
+  <table>
+    <div id = "tableau">
+          <thead>
+            
+                <tr>
+                    <th>Billets de 100 </th> 
+                    <th>Billets de 50</th> 
+                    <th>Billets de 20</th>
+                    <th>Billets de 10</th>
+                    <th>Billets de 5</th>
+                    <th>Pièces de 1$</th>
+                    <th>Pièces de 25 sous</th>
+                    <th>Pièces de 10 sous</th>
+                    <th>Pièces de 5 sous</th>
+                </tr>
+            
+          </thead>
+  <tbody>
+          
+                <tr>
+                   <td><div id = "billets100"></div></td>
+                   <td> <div id = "billets50"></div></td>
+                   <td><div id = "billets20"></div></td>
+                  <td><div id = "billets10"></div></td>
+                  <td><div id = "billets5"></div></td>
+                  <td> <div id = "sous1"></div></td>
+                  <td> <div id = "sous25"></div></td>
+                  <td> <div id = "sous10"></div></td>
+                  <td> <div id = "sous05"></div> </td>
+                </tr> 
+     </div>
+    </table>
+  <div id = "merci"><div>
+</body>
+</html>
+
+    
+
+
+
+
